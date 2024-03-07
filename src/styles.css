@@ -13,3 +13,37 @@
     font-weight: 600;
     font-style: normal;
 }
+
+.playfair-display-450 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+}
+
+
+
+#toast {
+    background-color: white;
+    /* Gray background */
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    position: fixed;
+    /* Position it at the bottom */
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Center it horizontally */
+    opacity: 0;
+    /* Initially hidden */
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+    /* Add a fade transition */
+}
+
+#toast.show {
+    opacity: 1;
+    /* Show the toast */
+    visibility: visible;
+}
