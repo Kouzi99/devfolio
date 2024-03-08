@@ -1,3 +1,20 @@
+const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
+
+function applyTheme() {
+  if (prefersDarkMode.matches) {
+    // User prefers dark mode
+    document.documentElement.classList.add('dark'); 
+  } else {
+    // User prefers light mode or no preference
+    document.documentElement.classList.remove('dark'); 
+  }
+}
+
+// Initial preference check
+applyTheme();
+
+// Listen for changes in user preference
+prefersDarkMode.addEventListener('change', applyTheme);
 
 
     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
