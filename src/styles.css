@@ -47,3 +47,23 @@
     /* Show the toast */
     visibility: visible;
 }
+
+.animation-pulse {
+    /*box-shadow: 0 0 0 20px rgba(229,62,62, 0.5);
+    transform: scale(0.8);*/
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1.0;
+    }
+
+    60% {
+        opacity: .8;
+    }
+}
+
+    
