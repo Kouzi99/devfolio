@@ -68,17 +68,4 @@ themeToggleBtn.addEventListener('click', function() {
 
 
 
-//clipbord
-document.getElementById('copyButton').addEventListener('click', function() {
-  const email = document.getElementById('myEmail').textContent;
-  navigator.clipboard.writeText(email); 
 
-  // Show the toast
-  const toast = document.getElementById('toast');
-  toast.classList.add('show');
-
-  // Hide the toast after 2 seconds
-  setTimeout(function() {
-    toast.classList.remove('show');
-  }, 2000); 
-});
