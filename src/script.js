@@ -66,10 +66,7 @@ themeToggleBtn.addEventListener('click', function() {
 });
 
 
-anime({
-  targets: ['.development'],
-  //anime.js
-});
+
 
 //clipbord
 document.getElementById('copyButton').addEventListener('click', function() {
